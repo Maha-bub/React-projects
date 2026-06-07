@@ -19,6 +19,9 @@ export default function Nav() {
                         <li class="nav-item">
                             <Link class="nav-link" to="/props">Props</Link>
                         </li>
+                         <li class="nav-item">
+                            <Link class="nav-link" to="/events">Events</Link>
+                        </li>
                         
                     </ul>
                 </div>

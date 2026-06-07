@@ -5,13 +5,36 @@ import Footer from '../components/Footer';
 import { Route } from 'react-router-dom';
 
 export default function props() {
+
+    const person = {
+        name: "Mahabub", age:23, address:"Dhaka,dhanmondi" 
+    }
+
+
+    //destructuring
+    const {name, age}= person;
   return (
     <>
     <Header/>
     <Nav/>
-    <h1>all about the props</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <h4>Object property o/p</h4>
+    <p>
+        Name: {person.name} <br/>
+        Age: {person.age} <br/>
+        Address: {person.address}
+    </p>
+
+
+    <h5>Destructuring o/p</h5>
+    <p> 
+        Name: {name} <br/>
+        Age: {age} 
+    </p>
     <Footer/>
     </>
   )
 }
+
+
+
+
