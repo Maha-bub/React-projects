@@ -1,11 +1,18 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Aboute from './pages/Aboute';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="container">
-     <h1 className='text-warning 2xl text-center'>Welcome to React bootstrap v5</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboute" element={<Aboute />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>   
   );
 }
 
