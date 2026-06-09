@@ -18,17 +18,21 @@ export default function Forms() {
 
 
   // multiple input field handle function
-  const [inputs, setInput] = useState({})
+  const [inputs, setInputs] = useState({})
   console.log(inputs);
 
 
   function handleChange(e) {
-
-    
     const value = e.target.value;
     const name = e.target.name;
 
-    setInput(values => ({ ...values, [name]: value }))
+    setInputs(values => ({ ...values, [name]: value }))
+  }
+
+  const [district, setDistrict] = useState("Dhaka");
+  function handleChange2(event) {
+
+    setDistrict(event.target.value);
   }
 
 
@@ -42,24 +46,41 @@ export default function Forms() {
 
 
       <form>
-        <label>First name:
+        <label>FullName:
           <input
             type="text"
             name="firstname"
             value={inputs.firstname}
             onChange={handleChange}
           />
-        </label>
-        <label>Last name:
-          <input
+        </label> <br /> <br />
+        <label>Address:
+          <textarea name="address" onChange={handleChange} id="">{inputs.address}</textarea>
+          {/* <input
             type="text"
             name="lastname"
             value={inputs.lastname}
             onChange={handleChange}
-          />
-        </label>
-        <p>Current values: {inputs.firstname} {inputs.lastname}</p>
+          /> */}
+        </label> <br />
+        <h4>Your Gender:</h4>
+        Male: <input type="radio" name='gender' value="Male" checked={inputs.gender === 'Male'} onChange={handleChange} />
+        Female: <input type="radio" name='gender' value="Female" checked={inputs.gender === 'Female'} onChange={handleChange} />
+        <h3>Current values:</h3>
+        <p> {inputs.firstname} comes from  {inputs.address}</p> <br />
+        <h2>Select a District:</h2> <br />
+        <select name="district" value={district} onChange={handleChange2} id="">
+
+          <option value="Dhaka">Dhaka</option>
+          <option value="Rangpur">Rangpur</option>
+          <option value="Mymonsing">Mymonsing</option>
+          <option value="Sylhet">Sylhet</option>
+          <option value="Barisal">Barisal</option>
+        </select>
       </form>
+
+
+
 
       <Footer />
 

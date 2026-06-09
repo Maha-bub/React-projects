@@ -7,6 +7,7 @@ import Props from './pages/Props';
 import Events from './pages/Events';
 import List from './pages/List';
 import Forms from './pages/Forms';
+import DisplayDataApi from './pages/DisplayDataApi';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/list" element={<List />} />
           <Route path="/forms" element={<Forms />} />
+          <Route path="/displaydata" element={<DisplayDataApi />} />
         </Routes>
       </BrowserRouter>
     </>
