@@ -5,8 +5,12 @@ import Nav from '../components/Nav'
 
 export default function Events() {
 
-    const welcome = () => {
+    const welcome = (x) => {
         alert ("Welcome to React");
+    }
+
+    const Greatings=(message)=>{
+      alert(message);
     }
 
   return (
@@ -15,6 +19,8 @@ export default function Events() {
     <Nav/>
     <h3>Hello customer, please visit our site.</h3>
     <button onClick={welcome}>Click here</button>
+    <button onClick={()=>welcome()}>Click here</button>
+    <button onClick={()=>Greatings('You are very good person')}>Click here</button>
     <Footer/>
     
     
