@@ -7,6 +7,14 @@ import axios from 'axios'
 
 export default function Forms() {
 
+  // single input field value handle functions
+
+
+  // const [name, setName]=useState("");
+  // console.log(name);
+
+  // function handleChange(e){
+  //   setName(e.target.value);
 
 
 
