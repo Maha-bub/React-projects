@@ -22,6 +22,15 @@ export default function Nav() {
                          <li class="nav-item">
                             <Link class="nav-link" to="/events">Events</Link>
                         </li>
+                         <li class="nav-item">
+                            <Link class="nav-link" to="/list">Lists</Link>
+                        </li>
+                         <li class="nav-item">
+                            <Link class="nav-link" to="/forms">Forms</Link>
+                        </li>
+                         <li class="nav-item">
+                            <Link class="nav-link" to="/displaydata">DisplayDataApi</Link>
+                        </li>
                         
                     </ul>
                 </div>
