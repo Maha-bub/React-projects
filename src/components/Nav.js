@@ -8,7 +8,7 @@ export default function Nav() {
                 <div className="container-fluid">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link class="nav-link active" to="/">Home</Link>
+                            <Link className="nav-link active" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/aboute">Aboute</Link>

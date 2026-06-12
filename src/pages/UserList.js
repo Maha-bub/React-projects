@@ -5,10 +5,9 @@ import Footer from "../components/Footer";
 import axios from "axios";
 
 export default function UserList() {
-  const [users, setUsers] = useState();
+  const [users, setUsers] = useState([]);
   useEffect(() => {
-    axios
-      .get("http://localhost/React-projects/api/user_list.php")
+    axios.get("http://localhost/React-projects/api/user_list.php")
       .then((res) => {
         setUsers(res.data);
       });
@@ -24,15 +23,15 @@ export default function UserList() {
       <ul>
         {
             users.map((user)=>(
-                <li key={user.id}>
-                    <li className="text-lg font">
+           
+                    <li key={user.id} className="text-lg font">
                         Id:{user.id} <br />
                         Name:{user.name} <br />
                         Address:{user.address} <br />
                         district:{user.district} <br />
                     </li>
 
-                </li>
+              
             ))
         }
       </ul>

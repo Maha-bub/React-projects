@@ -30,24 +30,12 @@ export default function Forms() {
     setInputs(values => ({ ...values, [name]: value }))
   }
 
-  const [district, setDistrict] = useState("Dhaka");
-  function handleChange2(event) {
-
-    setDistrict(event.target.value);
-  }
-
   // handleSubmit Function for post data to user_info database
   function handleSubmit(e) {
     e.preventDefault();
-    const response= axios.post("http://localhost/react2/api/user_create.php", inputs)
-    .then(res=>{alert("data submit successfully done!",res.message)});
-
-
-
-  }
-
-
-
+    const response= axios.post("http://localhost/React-projects/api/user_create.php", inputs)
+    .then(res => { alert(res.message) });
+  };
 
   return (
     <>
@@ -70,7 +58,7 @@ export default function Forms() {
         Male: <input type="radio" name='gender' value="Male" checked={inputs.gender === 'Male'} onChange={handleChange} />
         Female: <input type="radio" name='gender' value="Female" checked={inputs.gender === 'Female'} onChange={handleChange} />
         <h2>Select a District:</h2>
-        <select name="district" value={district} onChange={handleChange2} id="">
+        <select name="district" value={district} onChange={handleChange} id="">
 
           <option value="Dhaka">Dhaka</option>
           <option value="Rangpur">Rangpur</option>
@@ -101,6 +89,4 @@ export default function Forms() {
       <Footer />
 
 
-    </>
-  )
-}
+    </>)};

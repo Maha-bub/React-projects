@@ -17,7 +17,7 @@ export default function MyCars() {
             <div style={style}>
                 <h1>My Cars List:</h1>
                 <ul>
-                    {cars.map((car) => <li>{car} is one of the most expensive collection of mine </li>)}
+                    {cars.map((car) => <li key={car}>{car} is one of the most expensive collection of mine </li>)}
                 </ul>
 
             </div>

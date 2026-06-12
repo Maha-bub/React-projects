@@ -4,7 +4,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { Route } from 'react-router-dom';
 
-export default function props() {
+export default function Props() {
 
     const person = {
         name: "Mahabub", age:23, address:"Dhaka,dhanmondi" 
