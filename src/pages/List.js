@@ -12,8 +12,8 @@ export default function MyCars() {
     }
     return (
         <>
-            <Header />
             <Nav />
+            <Header />
             <div style={style}>
                 <h1>My Cars List:</h1>
                 <ul>

@@ -51,8 +51,8 @@ export default function Forms() {
 
   return (
     <>
-      <Header />
       <Nav />
+      <Header />
       <h2>Explore react forms</h2>
 
 

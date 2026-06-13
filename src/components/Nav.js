@@ -4,32 +4,35 @@ import { Link } from 'react-router-dom'
 export default function Nav() {
     return (
         <>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <div class="container-fluid">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+            <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div className="container-fluid">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
                             <Link class="nav-link active" to="/">Home</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/aboute">Aboute</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/aboute">Aboute</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/contact">Contact</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/props">Props</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/props">Props</Link>
                         </li>
-                         <li class="nav-item">
-                            <Link class="nav-link" to="/events">Events</Link>
+                         <li className="nav-item">
+                            <Link className="nav-link" to="/events">Events</Link>
                         </li>
-                         <li class="nav-item">
-                            <Link class="nav-link" to="/list">Lists</Link>
+                         <li className="nav-item">
+                            <Link className="nav-link" to="/list">Lists</Link>
                         </li>
-                         <li class="nav-item">
-                            <Link class="nav-link" to="/forms">Forms</Link>
+                         <li className="nav-item">
+                            <Link className="nav-link" to="/forms">Forms</Link>
                         </li>
-                         <li class="nav-item">
-                            <Link class="nav-link" to="/displaydata">DisplayDataApi</Link>
+                         <li className="nav-item">
+                            <Link className="nav-link" to="/displaydata">DisplayDataApi</Link>
+                        </li>
+                         <li className="nav-item">
+                            <Link className="nav-link" to="/userlist">UserList</Link>
                         </li>
                         
                     </ul>

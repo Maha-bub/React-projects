@@ -7,8 +7,8 @@ import { Route } from 'react-router-dom';
 export default function Contact() {
     return (
         <>
-            <Header />
             <Nav />
+            <Header />
             <div>Contact us</div>
             <Footer />
         </>

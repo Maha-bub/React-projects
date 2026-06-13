@@ -19,8 +19,8 @@ export default function DisplayDataApi() {
     console.log(users)
     return (
         <>
-            <Header />
             <Nav />
+            <Header />
             <h4>Display Api data using axios</h4>
             <div className='row'>
                 {

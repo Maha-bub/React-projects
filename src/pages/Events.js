@@ -17,8 +17,8 @@ export default function Events() {
 
   return (
     <>
-      <Header />
       <Nav />
+      <Header />
       <h3>Hello customer, please visit our site.</h3>
       <button onClick={welcome}>Click here</button> <br />
       <button onClick={() => welcome()}>Click here</button> <br />

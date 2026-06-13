@@ -15,8 +15,8 @@ export default function props() {
     const {name, age}= person;
   return (
     <>
-    <Header/>
     <Nav/>
+    <Header/>
     <h4>Object property o/p</h4>
     <p>
         Name: {person.name} <br/>

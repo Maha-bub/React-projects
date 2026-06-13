@@ -7,8 +7,8 @@ import { Route } from 'react-router-dom';
 export default function Aboute() {
     return (
         <>
-            <Header />
             <Nav />
+            <Header />
             <div>Welcome to Our community</div>
             <Footer />
         </>

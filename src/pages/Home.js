@@ -7,8 +7,8 @@ import { Route } from 'react-router-dom';
 export default function Home() {
     return (
         <>
-            <Header/>
             <Nav/>
+            <Header/>
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-sm-4">
