@@ -1,28 +1,42 @@
-import React, {useEffect, useState} from 'react'
-import Header from '../components/Header';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
-import axios from 'axios';
-
-
+import React, { useEffect, useState } from "react";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import axios from "axios";
 
 export default function UserList() {
-         const [users, setUsers]=useState();
-         useEffect(()=>{
-            axios.get('http://localhost/React-projects/api/user_list.php')
-            .then(res=>{setUsers(res.data)});
-         },[]);
+  const [users, setUsers] = useState();
+  useEffect(() => {
+    axios
+      .get("http://localhost/React-projects/api/user_list.php")
+      .then((res) => {
+        setUsers(res.data);
+      });
+  }, []);
 
-         console.log(users);
+  console.log(users);
 
+  return (
+    <>
+      <Nav></Nav>
+      <Header></Header>
+      <div>UserList</div>
+      <ul>
+        {
+            users.map((user)=>(
+                <li key={user.id}>
+                    <li className="text-lg font">
+                        Id:{user.id} <br />
+                        Name:{user.name} <br />
+                        Address:{user.address} <br />
+                        district:{user.district} <br />
+                    </li>
 
-    return (
-        <>
-        <Nav></Nav>
-        <Header></Header>
-        <div>UserList</div>
-        <Footer></Footer>
-        </>
-        
-    )
+                </li>
+            ))
+        }
+      </ul>
+      <Footer></Footer>
+    </>
+  );
 }
